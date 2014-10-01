@@ -1,7 +1,11 @@
 class VideosController < ApplicationController
 
-  def show
+  def index
     @video = Video.all
+    end
+
+  def show
+    #binding.pry
   end
 
 end
