@@ -1,7 +1,8 @@
--Category.all.each do |category|
-  %header
-    %h3= link_to "#{category.name}",nil #no route for category yet
-    %br/
+
+-@categories.each do |category|
+  %article.video_category
+    %header
+      %h3= link_to category.name, category_path(category)
   .videos.row
     -category.videos.each do |video|
       .video.col-sm-2
@@ -11,7 +12,3 @@
           %br/
           %br/
           %br/
-
-
-
-

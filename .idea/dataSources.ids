@@ -3,4 +3,7 @@
   <data-source source="LOCAL" name="Rails myflix: development" uuid="4934d4ad-00c2-4eb6-a674-dd6c5816d2df">
     <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
   </data-source>
+  <data-source source="LOCAL" name="Rails myflix: test" uuid="90fcf1fd-d4cc-430b-b8c5-29bca4939248">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
 </component>
