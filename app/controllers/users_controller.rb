@@ -1,8 +1,9 @@
 class UsersController < ApplicationController
 
-def new
-@user = User.new
-end
+  def new
+    redirect_to home_path if current_user
+    @user = User.new
+  end
   def create
     binding.pry
     @user = User.new(user_params)
@@ -12,8 +13,7 @@ end
       render :new
     end
   end
-def user_params
-  params.require(:user).permit(:username, :password, :email)
-
-end
+  def user_params
+    params.require(:user).permit(:username, :password, :email)
+  end
 end

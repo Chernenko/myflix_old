@@ -4,5 +4,4 @@ class CategoriesController < ApplicationController
     @videos = Category.videos.all
     @category = Category.find(params[:id])
   end
-
 end
